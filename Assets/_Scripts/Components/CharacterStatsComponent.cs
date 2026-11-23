@@ -15,10 +15,29 @@ public class CharacterStats : MonoBehaviour, IStatistics
 
     protected virtual void Awake()
     {
+<<<<<<< Updated upstream
         currentHealth = maxHealth;
     }
 
     public void TakeDamage(float amount)
+=======
+        CurrentHealth = maxHealth;
+    }
+    #region Health
+    // Apply incoming damage.
+    public void TakeDamage(float damage)
+    {
+        CurrentHealth -= damage;
+        // Call animator or 
+        CurrentHealth = Mathf.Max(0, CurrentHealth);
+
+        if (CurrentHealth <= 0)
+            Die();
+    }
+
+    // Handle death.
+    protected void Die()
+>>>>>>> Stashed changes
     {
         if (!IsAlive || amount <= 0f)
             return;

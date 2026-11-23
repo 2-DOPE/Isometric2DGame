@@ -1,12 +1,15 @@
-﻿using UnityEngine;
+﻿
+using UnityEngine;
 using UnityEngine.InputSystem;
 
 /// <summary>
-/// This the class by wich the player gets to control characters in the game.
-/// it is mostly responsible for taking control over an actor without hard coding the input actions into the latter, and let's us swap charcters in game smoothly.
+/// Handles player input and character possession.
+/// Allows the player to control different characters without
+/// hardcoding input actions into individual characters.
 /// </summary>
 public class PlayerController : CharacterControllerBase
 {
+<<<<<<< Updated upstream
     [Header("Possessed Character on Begin Play")]
     [SerializeField] Character playerCharacter;
     
@@ -22,31 +25,101 @@ public class PlayerController : CharacterControllerBase
         moveAction.action.performed += OnMove;
         moveAction.action.canceled += OnMoveCanceled;
         aimAction.action.performed += OnAim;
-    }
-    private void OnDisable()
+=======
+    [Header("Input Actions")]
+    [SerializeField, InspectorName("Move")]
+    private InputActionReference moveAction;
+
+    [SerializeField, InspectorName("Camera Look")]
+    private InputActionReference lookAction;
+
+    [SerializeField, InspectorName("Attack")]
+    private InputActionReference AttackAction;
+
+    [Space(22f)]
+    [Header("References")]
+    [SerializeField] private Camera mainCamera;
+
+    [InspectorName("Camera Pan Component")]
+    [Tooltip("Reference the Camera Pan Component here")]
+    [SerializeField] private CameraPanComponent cameraPan;
+
+    [InspectorName("Camera reset time")]
+    [Tooltip("Time before camera recenters to player when using Mouse")]
+    [SerializeField, Min(0)]
+    private float camResetTime = 5f;
+
+    private void OnEnable()
     {
+        lookAction.action.performed += HandleCameraPan;
+        lookAction.action.canceled += ResetCamera;
+>>>>>>> Stashed changes
+    }
+
+    private new void OnDisable()
+    {
+<<<<<<< Updated upstream
+        base.OnDisable();
+    }
+=======
+        lookAction.action.performed -= HandleCameraPan;
+        lookAction.action.canceled -= ResetCamera;
+
+        moveAction.action.Disable();
+        lookAction.action.Disable();
+        AttackAction.action.Disable();
+
+        CancelInvoke(nameof(ResetCameraDelayed));
+
         base.OnDisable();
     }
 
-    /// <summary>
-    /// Event function that handles the logic when taking control over a character.
-    /// 
-    /// </summary>
-    /// <param name="character"> The character to be possessed</param>
+    private void Update()
+    {
+        if (!IsPossessing)
+            return;
+
+        // Read movement input continuously.
+        Vector2 input = moveAction.action.ReadValue<Vector2>();
+
+        if (input.sqrMagnitude > 0.001f)
+        {
+            PossessedCharacter.Move(input);
+        }
+        else
+        {
+            PossessedCharacter.StopMoving();
+        }
+
+        //float ATKInput = AttackAction.action.ReadValue<float>();
+
+        if (AttackAction.action.WasPerformedThisFrame())
+        {
+            PossessedCharacter.Attack();
+
+        }
+    }
+
+    #region Possession
+>>>>>>> Stashed changes
+
     protected override void OnPossess(Character character)
     {
         base.OnPossess(character);
 
         moveAction.action.Enable();
+<<<<<<< Updated upstream
         aimAction.action.Enable();
+=======
+        lookAction.action.Enable();
+        AttackAction.action.Enable();
+>>>>>>> Stashed changes
     }
-    /// <summary>
-    /// Event function that handles the logic when taking control off a character.
-    /// </summary>
-    /// <param name="character"></param>
+
     protected override void OnUnpossess(Character character)
     {
         moveAction.action.Disable();
+<<<<<<< Updated upstream
         aimAction.action.Disable();
 
         base.OnUnpossess(character);
@@ -91,3 +164,51 @@ public class PlayerController : CharacterControllerBase
         );
     }
 }
+=======
+        lookAction.action.Disable();
+        AttackAction.action.Disable();
+
+        // Prevent the previous character from continuing to move.
+        character.StopMoving();
+
+        base.OnUnpossess(character);
+    }
+
+    #endregion
+
+    #region CameraPanComponent
+
+    private void HandleCameraPan(InputAction.CallbackContext context)
+    {
+        if (context.control.device is Pointer)
+        {
+            cameraPan.CameraLookAt(context.ReadValue<Vector2>());
+        }
+        else
+        {
+            cameraPan.CameraLookAt(context.ReadValue<Vector2>());
+        }
+    }
+
+    private void ResetCamera(InputAction.CallbackContext context)
+    {
+        if (context.control.device is Pointer)
+        {
+            CancelInvoke(nameof(ResetCameraDelayed));
+            Invoke(nameof(ResetCameraDelayed), camResetTime);
+        }
+        else
+        {
+            CancelInvoke(nameof(ResetCameraDelayed));
+            cameraPan.Reset();
+        }
+    }
+
+    private void ResetCameraDelayed()
+    {
+        cameraPan.Reset();
+    }
+
+    #endregion
+}
+>>>>>>> Stashed changes

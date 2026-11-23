@@ -75,7 +75,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovementComponent
   rigidbody2D: {fileID: 0}
-  speed: 5
+  speed: 3
 --- !u!114 &6219258146929430957
 MonoBehaviour:
   m_ObjectHideFlags: 0

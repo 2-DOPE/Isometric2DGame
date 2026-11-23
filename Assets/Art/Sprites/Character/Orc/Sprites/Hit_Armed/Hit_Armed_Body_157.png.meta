@@ -1,0 +1,637 @@
+fileFormatVersion: 2
+guid: e116a99cea2664f46abc354d6933b387
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6950066020150675582
+    second: Hit_Armed_Body_157_0
+  - first:
+      213: 2827282457005282832
+    second: Hit_Armed_Body_157_1
+  - first:
+      213: -6192821249389665066
+    second: Hit_Armed_Body_157_2
+  - first:
+      213: -8148829674699723390
+    second: Hit_Armed_Body_157_3
+  - first:
+      213: -4391150902783349513
+    second: Hit_Armed_Body_157_4
+  - first:
+      213: 4076773444271795348
+    second: Hit_Armed_Body_157_5
+  - first:
+      213: 3726832598949966336
+    second: Hit_Armed_Body_157_6
+  - first:
+      213: 6380037471678101621
+    second: Hit_Armed_Body_157_7
+  - first:
+      213: 7367338093403953583
+    second: Hit_Armed_Body_157_8
+  - first:
+      213: 1368125945378056564
+    second: Hit_Armed_Body_157_9
+  - first:
+      213: 1414695818310217627
+    second: Hit_Armed_Body_157_10
+  - first:
+      213: -147741781294713442
+    second: Hit_Armed_Body_157_11
+  - first:
+      213: -9223348800221911903
+    second: Hit_Armed_Body_157_12
+  - first:
+      213: -7662293952286381360
+    second: Hit_Armed_Body_157_13
+  - first:
+      213: 5711487442085922559
+    second: Hit_Armed_Body_157_14
+  - first:
+      213: -6854599454523100666
+    second: Hit_Armed_Body_157_15
+  - first:
+      213: 7419395114561878601
+    second: Hit_Armed_Body_157_16
+  - first:
+      213: 5444870571165382103
+    second: Hit_Armed_Body_157_17
+  - first:
+      213: -7095431574110550236
+    second: Hit_Armed_Body_157_18
+  - first:
+      213: -2030915473845462218
+    second: Hit_Armed_Body_157_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hit_Armed_Body_157_0
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1070
+        width: 114
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e780898e838937060800000000000000
+      internalID: 6950066020150675582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Body_157_1
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 1072
+        width: 140
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0165e714a668c3720800000000000000
+      internalID: 2827282457005282832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Body_157_2
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 1072
+        width: 150
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d463a872edae0aa0800000000000000
+      internalID: -6192821249389665066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Body_157_3
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 1071
+        width: 115
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28d6c50d59a89ee80800000000000000
+      internalID: -8148829674699723390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Body_157_4
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 1068
+        width: 106
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fc667ce48f7f03c0800000000000000
+      internalID: -4391150902783349513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Body_157_5
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 746
+        width: 90
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49ce09f09db939830800000000000000
+      internalID: 4076773444271795348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Body_157_6
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 746
+        width: 81
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00232cdc08e58b330800000000000000
+      internalID: 3726832598949966336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Body_157_7
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 747
+        width: 85
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 578fd0117427a8850800000000000000
+      internalID: 6380037471678101621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Body_157_8
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 750
+        width: 87
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa9db8d46fa0e3660800000000000000
+      internalID: 7367338093403953583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Body_157_9
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 756
+        width: 86
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47921467c4f8cf210800000000000000
+      internalID: 1368125945378056564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Body_157_10
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 434
+        width: 83
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9f6c93f95202a310800000000000000
+      internalID: 1414695818310217627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Body_157_11
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 427
+        width: 82
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e95f177f1ad13fdf0800000000000000
+      internalID: -147741781294713442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Body_157_12
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 422
+        width: 85
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a46f333225100080800000000000000
+      internalID: -9223348800221911903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Body_157_13
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 420
+        width: 87
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0daa8593f301aa590800000000000000
+      internalID: -7662293952286381360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Body_157_14
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 427
+        width: 92
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff6c2ac5197434f40800000000000000
+      internalID: 5711487442085922559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Body_157_15
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 111
+        width: 96
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60270930d129fd0a0800000000000000
+      internalID: -6854599454523100666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Body_157_16
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 116
+        width: 101
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94ababb0c8cf6f660800000000000000
+      internalID: 7419395114561878601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Body_157_17
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 113
+        width: 105
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d57a42bfe0109b40800000000000000
+      internalID: 5444870571165382103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Body_157_18
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 111
+        width: 106
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 427cc099396f78d90800000000000000
+      internalID: -7095431574110550236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Body_157_19
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 110
+        width: 107
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63bd894032db0d3e0800000000000000
+      internalID: -2030915473845462218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Hit_Armed_Body_157_0: 6950066020150675582
+      Hit_Armed_Body_157_1: 2827282457005282832
+      Hit_Armed_Body_157_10: 1414695818310217627
+      Hit_Armed_Body_157_11: -147741781294713442
+      Hit_Armed_Body_157_12: -9223348800221911903
+      Hit_Armed_Body_157_13: -7662293952286381360
+      Hit_Armed_Body_157_14: 5711487442085922559
+      Hit_Armed_Body_157_15: -6854599454523100666
+      Hit_Armed_Body_157_16: 7419395114561878601
+      Hit_Armed_Body_157_17: 5444870571165382103
+      Hit_Armed_Body_157_18: -7095431574110550236
+      Hit_Armed_Body_157_19: -2030915473845462218
+      Hit_Armed_Body_157_2: -6192821249389665066
+      Hit_Armed_Body_157_3: -8148829674699723390
+      Hit_Armed_Body_157_4: -4391150902783349513
+      Hit_Armed_Body_157_5: 4076773444271795348
+      Hit_Armed_Body_157_6: 3726832598949966336
+      Hit_Armed_Body_157_7: 6380037471678101621
+      Hit_Armed_Body_157_8: 7367338093403953583
+      Hit_Armed_Body_157_9: 1368125945378056564
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
