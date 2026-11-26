@@ -16,23 +16,23 @@ enum CharacterControllerType
 /// Character is Always possessed by a Controller , either player or AI controller (the later can be Mob or passive NPC to be defined adherently)
 /// </summary>
 [RequireComponent(typeof(MovementComponent))]
-[RequireComponent(typeof(CharacterStats))]
+[RequireComponent(typeof(CharacterStatsComponent))]
 public abstract class Character : MonoBehaviour
 {
+    //for Debug purposes only
     [Header("Essential Components")]
-    [SerializeField] private CharacterStats stats;
+    [SerializeField] private CharacterStatsComponent stats;
     [SerializeField] private MovementComponent movement;
-    [SerializeField] private AimingComponent aiming;
 
-    public CharacterStats Stats => stats;
+ 
+    public CharacterStatsComponent Stats => stats;
     public MovementComponent Movement => movement;
-    public AimingComponent Aiming => aiming;
+    
 
     protected virtual void Awake()
     {
-        stats = GetComponent<CharacterStats>();
+        stats = GetComponent<CharacterStatsComponent>();
         movement = GetComponent<MovementComponent>();
-        aiming = GetComponent<AimingComponent>();
     }
 
     public virtual void Move(Vector2 direction)
@@ -43,16 +43,6 @@ public abstract class Character : MonoBehaviour
     public virtual void StopMoving()
     {
         Movement.StopMovement();
-    }
-
-    public virtual void SetTarget(CharacterTarget target)
-    {
-        // Forward target to the relevant component(s).
-    }
-
-    public virtual void ClearTarget()
-    {
-        // Clear current target.
     }
 
 }

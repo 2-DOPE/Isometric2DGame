@@ -7,26 +7,36 @@ using UnityEngine.InputSystem;
 /// </summary>
 public class PlayerController : CharacterControllerBase
 {
-    [Header("Possessed Character on Begin Play")]
-    [SerializeField] Character playerCharacter;
-    
     [Header("Input Actions")]
-    [SerializeField] private InputActionReference moveAction;
-    [SerializeField] private InputActionReference aimAction;
-
+    [SerializeField, InspectorName("Move")] private InputActionReference moveAction;
+    [SerializeField, InspectorName("Camera Look")] private InputActionReference lookAction;
+    
+    [Space(22f)]
     [Header("References")]
     [SerializeField] private Camera mainCamera;
+
+    [InspectorName("Camera Pan Component"), Tooltip("Refrence the Camera Pan Component in here")] 
+    [SerializeField] private CameraPanComponent cameraPan;
+    
+    [InspectorName("Camera reset time"), Tooltip("Time before camera recenters to player when using Mouse")] 
+    [SerializeField,Min(0)] private float camResetTime = 5f; // in Seconds
+
 
     private void OnEnable()
     {
         moveAction.action.performed += OnMove;
         moveAction.action.canceled += OnMoveCanceled;
-        aimAction.action.performed += OnAim;
+        lookAction.action.performed += HandleCameraPan;
+        lookAction.action.canceled += ResetCamera;
     }
     private void OnDisable()
     {
+        //moveAction.action.performed -= OnMove;
+        //moveAction.action.canceled -= OnMoveCanceled;
+        //lookAction.action.performed -= HandleCameraPan;
         base.OnDisable();
     }
+    #region Possession
 
     /// <summary>
     /// Event function that handles the logic when taking control over a character.
@@ -38,7 +48,7 @@ public class PlayerController : CharacterControllerBase
         base.OnPossess(character);
 
         moveAction.action.Enable();
-        aimAction.action.Enable();
+        lookAction.action.Enable();
     }
     /// <summary>
     /// Event function that handles the logic when taking control off a character.
@@ -47,13 +57,16 @@ public class PlayerController : CharacterControllerBase
     protected override void OnUnpossess(Character character)
     {
         moveAction.action.Disable();
-        aimAction.action.Disable();
+        lookAction.action.Disable();
 
         base.OnUnpossess(character);
     }
+    #endregion
+
+    #region Movement
     private void OnMove(InputAction.CallbackContext context)
     {
-        Debug.Log("MOVE INPUT RECEIVED: " + context.ReadValue<Vector2>());
+        //Debug.Log("MOVE INPUT RECEIVED: " + context.ReadValue<Vector2>());
 
         if (!IsPossessing)
         {
@@ -70,24 +83,39 @@ public class PlayerController : CharacterControllerBase
 
         PossessedCharacter.StopMoving();
     }
+    #endregion
 
-    private void OnAim(InputAction.CallbackContext context)
+    #region CameraPanComponent
+    private void HandleCameraPan(InputAction.CallbackContext context)
     {
-        if (!IsPossessing || mainCamera == null)
-            return;
+        if (context.control.device is Pointer)
+        {
+            Mathf.Clamp(context.control.device.magnitude, -1,1);
+            cameraPan.CameraLookAt(context.ReadValue<Vector2>());
+        }
+        else //Reset immediatly
+        {
+            cameraPan.CameraLookAt(context.ReadValue<Vector2>());
+        }
 
-        Vector2 screenPosition = context.ReadValue<Vector2>();
-
-        Vector3 worldPosition = mainCamera.ScreenToWorldPoint(
-            new Vector3(
-                screenPosition.x,
-                screenPosition.y,
-                Mathf.Abs(mainCamera.transform.position.z)
-            )
-        );
-
-        PossessedCharacter.SetTarget(
-            new CharacterTarget(worldPosition)
-        );
     }
+    private void ResetCamera(InputAction.CallbackContext context)
+    {
+        // check if input comes from mouse
+        if(context.control.device is Pointer)
+        {
+            // Delay for few seconds before resetting the camera
+            Invoke(nameof(ResetCameraDelayed), camResetTime);
+        }
+        else //Reset immediatly
+        {
+            cameraPan.Reset();
+        }
+    }
+    private void ResetCameraDelayed()
+    {
+        cameraPan.Reset();
+    }
+    #endregion
+
 }

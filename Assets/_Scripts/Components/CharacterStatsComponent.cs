@@ -1,39 +1,32 @@
-
 using UnityEngine;
 
-public class CharacterStats : MonoBehaviour, IStatistics
+public class CharacterStatsComponent : MonoBehaviour
 {
-    [Header("Health Settings")]
-    [SerializeField, Min(1f)]
-    private float maxHealth = 100f;
-    private float currentHealth;
+    [SerializeField] private float maxHealth = 100f;
 
-    public float CurrentHealth => currentHealth;
-    public float MaxHealth => maxHealth;
+    public float CurrentHealth { get; private set; }
 
-    public bool IsAlive => currentHealth > 0f;
-
-    protected virtual void Awake()
+    private void Awake()
     {
-        currentHealth = maxHealth;
+        CurrentHealth = maxHealth;
+    }
+    #region Health
+    // Apply incoming damage.
+    public void TakeDamage(float damage)
+    {
+        CurrentHealth -= damage;
+
+        CurrentHealth = Mathf.Max(0, CurrentHealth);
+
+        if (CurrentHealth <= 0)
+            Die();
     }
 
-    public void TakeDamage(float amount)
+    // Handle death.
+    private void Die()
     {
-        if (!IsAlive || amount <= 0f)
-            return;
-
-        currentHealth = Mathf.Max(0f, currentHealth - amount);
+        Debug.Log($"{name} died.");
+        Destroy(gameObject);
     }
-
-    public void Heal(float amount)
-    {
-        if (!IsAlive || amount <= 0f)
-            return;
-
-        currentHealth = Mathf.Min(
-            maxHealth,
-            currentHealth + amount
-        );
-    }
+    #endregion
 }

@@ -31,7 +31,7 @@ public class MovementComponent : MonoBehaviour, IMoveable
     /// <param name="direction">The movement direction received from the controller.</param>
     public void SetMoveDirection(Vector2 direction)
     {
-        Debug.Log("MOVEMENT RECEIVED: " + direction);
+        //Debug.Log("MOVEMENT RECEIVED: " + direction);
 
         moveDirection = Vector2.ClampMagnitude(direction, 1f);
     }
