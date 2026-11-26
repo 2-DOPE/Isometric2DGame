@@ -12,3 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea8ff308bc2f9dc46a0baa1b3e3647ff, type: 3}
   m_Name: Enemy1_ChaseState
   m_EditorClassIdentifier: Assembly-CSharp::Chase
+  chaseRange: 15
+  chaseMaxSpeed: 3

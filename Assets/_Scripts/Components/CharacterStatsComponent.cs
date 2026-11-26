@@ -8,8 +8,9 @@ public class CharacterStatsComponent : MonoBehaviour
 
     private void Awake()
     {
-        CurrentHealth = maxHealth;
+        currentHealth = maxHealth;
     }
+    
     #region Health
     // Apply incoming damage.
     public void TakeDamage(float damage)

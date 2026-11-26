@@ -1,0 +1,637 @@
+fileFormatVersion: 2
+guid: 113bff7befa456243b4e704e4c2a7bfc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7980449358299273325
+    second: Hit_Armed_Shadow_157_0
+  - first:
+      213: -4344716624774433233
+    second: Hit_Armed_Shadow_157_1
+  - first:
+      213: 2163346385664183665
+    second: Hit_Armed_Shadow_157_2
+  - first:
+      213: -8307079699412278357
+    second: Hit_Armed_Shadow_157_3
+  - first:
+      213: -613991824008413563
+    second: Hit_Armed_Shadow_157_4
+  - first:
+      213: -3348761920674876213
+    second: Hit_Armed_Shadow_157_5
+  - first:
+      213: 8331230314207342623
+    second: Hit_Armed_Shadow_157_6
+  - first:
+      213: 595193269382144600
+    second: Hit_Armed_Shadow_157_7
+  - first:
+      213: 1580687935431993030
+    second: Hit_Armed_Shadow_157_8
+  - first:
+      213: -3130715662470648865
+    second: Hit_Armed_Shadow_157_9
+  - first:
+      213: -223106124178785643
+    second: Hit_Armed_Shadow_157_10
+  - first:
+      213: -3825176121301594085
+    second: Hit_Armed_Shadow_157_11
+  - first:
+      213: 5686637734098665135
+    second: Hit_Armed_Shadow_157_12
+  - first:
+      213: 4004451822086500570
+    second: Hit_Armed_Shadow_157_13
+  - first:
+      213: 4445953842944238872
+    second: Hit_Armed_Shadow_157_14
+  - first:
+      213: 801443610692005073
+    second: Hit_Armed_Shadow_157_15
+  - first:
+      213: -688766185634195067
+    second: Hit_Armed_Shadow_157_16
+  - first:
+      213: -3007235504443832694
+    second: Hit_Armed_Shadow_157_17
+  - first:
+      213: 409825974354552822
+    second: Hit_Armed_Shadow_157_18
+  - first:
+      213: -3881563007416019600
+    second: Hit_Armed_Shadow_157_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hit_Armed_Shadow_157_0
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1068
+        width: 113
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d681c6db86040ce60800000000000000
+      internalID: 7980449358299273325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Shadow_157_1
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 1057
+        width: 140
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f26f592cf3774b3c0800000000000000
+      internalID: -4344716624774433233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Shadow_157_2
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 1057
+        width: 150
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17d83ab6310c50e10800000000000000
+      internalID: 2163346385664183665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Shadow_157_3
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 1047
+        width: 115
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba32ca3b60357bc80800000000000000
+      internalID: -8307079699412278357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Shadow_157_4
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 1043
+        width: 106
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58efbfa60b9aa77f0800000000000000
+      internalID: -613991824008413563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Shadow_157_5
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 726
+        width: 89
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc4b1d096cec681d0800000000000000
+      internalID: -3348761920674876213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Shadow_157_6
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 730
+        width: 81
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f107b4c74d97e9370800000000000000
+      internalID: 8331230314207342623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Shadow_157_7
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 736
+        width: 84
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 852e932002d824800800000000000000
+      internalID: 595193269382144600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Shadow_157_8
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 742
+        width: 87
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c66b2c6d4bbfe510800000000000000
+      internalID: 1580687935431993030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Shadow_157_9
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 738
+        width: 85
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdb6fa531b67d84d0800000000000000
+      internalID: -3130715662470648865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Shadow_157_10
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 411
+        width: 82
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59afb11892e57ecf0800000000000000
+      internalID: -223106124178785643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Shadow_157_11
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 403
+        width: 82
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b101386959e3aeac0800000000000000
+      internalID: -3825176121301594085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Shadow_157_12
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 402
+        width: 85
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fae784bd3eefaee40800000000000000
+      internalID: 5686637734098665135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Shadow_157_13
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 402
+        width: 87
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad0b1a737bba29730800000000000000
+      internalID: 4004451822086500570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Shadow_157_14
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 408
+        width: 92
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8156978e67333bd30800000000000000
+      internalID: 4445953842944238872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Shadow_157_15
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 92
+        width: 96
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dcadcab7bc4f1b00800000000000000
+      internalID: 801443610692005073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Shadow_157_16
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 101
+        width: 101
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58919fbadc20176f0800000000000000
+      internalID: -688766185634195067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Shadow_157_17
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 106
+        width: 104
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a86cea1ed372446d0800000000000000
+      internalID: -3007235504443832694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Shadow_157_18
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 110
+        width: 106
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f7a1256d8effa500800000000000000
+      internalID: 409825974354552822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Armed_Shadow_157_19
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 110
+        width: 107
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 075dba9920be12ac0800000000000000
+      internalID: -3881563007416019600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Hit_Armed_Shadow_157_0: 7980449358299273325
+      Hit_Armed_Shadow_157_1: -4344716624774433233
+      Hit_Armed_Shadow_157_10: -223106124178785643
+      Hit_Armed_Shadow_157_11: -3825176121301594085
+      Hit_Armed_Shadow_157_12: 5686637734098665135
+      Hit_Armed_Shadow_157_13: 4004451822086500570
+      Hit_Armed_Shadow_157_14: 4445953842944238872
+      Hit_Armed_Shadow_157_15: 801443610692005073
+      Hit_Armed_Shadow_157_16: -688766185634195067
+      Hit_Armed_Shadow_157_17: -3007235504443832694
+      Hit_Armed_Shadow_157_18: 409825974354552822
+      Hit_Armed_Shadow_157_19: -3881563007416019600
+      Hit_Armed_Shadow_157_2: 2163346385664183665
+      Hit_Armed_Shadow_157_3: -8307079699412278357
+      Hit_Armed_Shadow_157_4: -613991824008413563
+      Hit_Armed_Shadow_157_5: -3348761920674876213
+      Hit_Armed_Shadow_157_6: 8331230314207342623
+      Hit_Armed_Shadow_157_7: 595193269382144600
+      Hit_Armed_Shadow_157_8: 1580687935431993030
+      Hit_Armed_Shadow_157_9: -3130715662470648865
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

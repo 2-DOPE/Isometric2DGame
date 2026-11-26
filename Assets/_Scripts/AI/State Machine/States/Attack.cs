@@ -41,7 +41,7 @@ public class Attack : State
         if (combat == null)
             return StateStatus.Failed;
 
-        combat.Attack(ai.perceptionTarget);
+        ai.Character.Attack();
 
         return StateStatus.Running;
     }

@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using Unity.VisualScripting;
+using UnityEngine;
+using UnityEngine.Rendering;
 
 public class CombatComponent : MonoBehaviour
 {
@@ -6,20 +8,11 @@ public class CombatComponent : MonoBehaviour
     [SerializeField] private float attackDamage = 10f;
     [SerializeField] private float attackRange = 1.5f;
     [SerializeField] private float attackCooldown = 1f;
+    [SerializeField] private int MaxComboIndex = 1;
+
+    protected int currentComboIndex = 0;
 
     private float lastAttackTime;
-
-    // Check whether the target is within attack range.
-    public bool IsInRange(GameObject target)
-    {
-        if (target == null)
-            return false;
-
-        return Vector2.Distance(
-            transform.position,
-            target.transform.position
-        ) <= attackRange;
-    }
 
     // Check whether another attack can be performed.
     public bool CanAttack()
@@ -28,18 +21,35 @@ public class CombatComponent : MonoBehaviour
     }
 
     // Perform an attack against the target.
-    public void Attack(GameObject target)
+    public void AttackDamage(Transform TracePoint)
     {
-        if (target == null || !IsInRange(target) || !CanAttack())
+        if (TracePoint == null)
             return;
+
+        Collider2D[] HitTarget = Physics2D.OverlapCircleAll(TracePoint.position, attackRange);
+
+        foreach (Collider2D hitTarget in HitTarget)
+        {
+            CharacterStatsComponent DamagedChar = hitTarget.GetComponent<CharacterStatsComponent>();
+
+            if (DamagedChar != null)
+            {
+                DamagedChar.TakeDamage(attackDamage);
+
+                Debug.Log($"Attacked {hitTarget.name} for {attackDamage} damage.");
+            }
+        }
+    }
+
+    public int UpdateComboIndex()
+    {
+        currentComboIndex = (currentComboIndex + 1) % (MaxComboIndex + 1);
 
         lastAttackTime = Time.time;
 
-        CharacterStatsComponent health = target.GetComponent<CharacterStatsComponent>();
+        Debug.Log($"Current Combo Index {currentComboIndex}");
 
-        if (health != null)
-            health.TakeDamage(attackDamage);
-
-        Debug.Log($"Attacked {target.name} for {attackDamage} damage.");
+        return currentComboIndex;
     }
+
 }

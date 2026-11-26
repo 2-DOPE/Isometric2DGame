@@ -9,7 +9,7 @@ public class MovementComponent : MonoBehaviour, IMoveable
 
     [Header("Movement Settings")]
     // Min(0f) prevents the speed value from being set below zero in the Inspector.
-    [SerializeField, Min(0f)] private float speed = 5f;
+    [SerializeField, Min(0f)] protected float speed = 5f;
 
     private Vector2 moveDirection;
 
@@ -46,8 +46,10 @@ public class MovementComponent : MonoBehaviour, IMoveable
         moveDirection = Vector2.zero;
     }
 
-    protected virtual void FixedUpdate()
-    {
-        rigidbody2D.linearVelocity = moveDirection * speed;
-    }
+   protected virtual void FixedUpdate()
+{
+    rigidbody2D.linearVelocity = moveDirection * speed;
+
+    //Debug.Log($"PHYSICS VELOCITY: {rigidbody2D.linearVelocity}");
+}
 }

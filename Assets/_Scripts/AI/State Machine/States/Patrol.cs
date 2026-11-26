@@ -83,8 +83,8 @@ public class PatrolState : State
     public override void Exit(StateMachine machine)
     {
         AIStateMachine ai = (AIStateMachine)machine;
-
         isWaiting = false;
         ai.Movement?.StopMovement();
+        ai.currentWaypointIndex = 0;
     }
 }

@@ -1,12 +1,16 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.InputSystem;
 
 /// <summary>
-/// This the class by wich the player gets to control characters in the game.
-/// it is mostly responsible for taking control over an actor without hard coding the input actions into the latter, and let's us swap charcters in game smoothly.
+/// Handles player input and character possession.
+/// Allows the player to control different characters without
+/// hardcoding input actions into individual characters.
 /// </summary>
 public class PlayerController : CharacterControllerBase
 {
+    [Header("Possessed Character on Begin Play")]
+    [SerializeField] Character playerCharacter;
+    
     [Header("Input Actions")]
     [SerializeField, InspectorName("Move")] private InputActionReference moveAction;
     [SerializeField, InspectorName("Camera Look")] private InputActionReference lookAction;
@@ -26,38 +30,57 @@ public class PlayerController : CharacterControllerBase
     {
         moveAction.action.performed += OnMove;
         moveAction.action.canceled += OnMoveCanceled;
-        lookAction.action.performed += HandleCameraPan;
-        lookAction.action.canceled += ResetCamera;
+        aimAction.action.performed += OnAim;
     }
-    private void OnDisable()
+
+    private new void OnDisable()
     {
-        //moveAction.action.performed -= OnMove;
-        //moveAction.action.canceled -= OnMoveCanceled;
-        //lookAction.action.performed -= HandleCameraPan;
         base.OnDisable();
     }
+        base.OnDisable();
+    }
+
+    private void Update()
+    {
+        if (!IsPossessing)
+            return;
+
+        // Read movement input continuously.
+        Vector2 input = moveAction.action.ReadValue<Vector2>();
+
+        if (input.sqrMagnitude > 0.001f)
+        {
+            PossessedCharacter.Move(input);
+        }
+        else
+        {
+            PossessedCharacter.StopMoving();
+        }
+
+        //float ATKInput = AttackAction.action.ReadValue<float>();
+
+        if (AttackAction.action.WasPerformedThisFrame())
+        {
+            PossessedCharacter.Attack();
+
+        }
+    }
+
     #region Possession
 
-    /// <summary>
-    /// Event function that handles the logic when taking control over a character.
-    /// 
-    /// </summary>
-    /// <param name="character"> The character to be possessed</param>
     protected override void OnPossess(Character character)
     {
         base.OnPossess(character);
 
         moveAction.action.Enable();
-        lookAction.action.Enable();
+        aimAction.action.Enable();
+
     }
-    /// <summary>
-    /// Event function that handles the logic when taking control off a character.
-    /// </summary>
-    /// <param name="character"></param>
+
     protected override void OnUnpossess(Character character)
     {
         moveAction.action.Disable();
-        lookAction.action.Disable();
+        aimAction.action.Disable();
 
         base.OnUnpossess(character);
     }
@@ -99,23 +122,12 @@ public class PlayerController : CharacterControllerBase
         }
 
     }
-    private void ResetCamera(InputAction.CallbackContext context)
-    {
-        // check if input comes from mouse
-        if(context.control.device is Pointer)
-        {
-            // Delay for few seconds before resetting the camera
-            Invoke(nameof(ResetCameraDelayed), camResetTime);
-        }
-        else //Reset immediatly
-        {
-            cameraPan.Reset();
-        }
-    }
+
     private void ResetCameraDelayed()
     {
         cameraPan.Reset();
     }
+
     #endregion
 
 }

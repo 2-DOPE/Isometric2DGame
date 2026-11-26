@@ -6,6 +6,7 @@ using UnityEngine;
 public class Chase : State
 {
     [SerializeField] private float chaseRange = 15f;
+    [SerializeField] private float chaseMaxSpeed = 15f;
 
     public override bool CanInterrupt(StateMachine machine)
     {
@@ -44,6 +45,7 @@ public class Chase : State
             (Vector2)(ai.perceptionTarget.transform.position -
                       ai.Character.transform.position);
 
+        ai.Movement.MoveSpeed.Equals(chaseMaxSpeed/ Vector2.Distance(ai.Character.transform.position,ai.perceptionTarget.transform.position)); 
         ai.Movement.SetMoveDirection(direction.normalized);
 
         return StateStatus.Running;
@@ -52,6 +54,10 @@ public class Chase : State
     public override void Exit(StateMachine machine)
     {
         AIStateMachine ai = (AIStateMachine)machine;
+        //Stop Movement
         ai.Movement?.StopMovement();
+        //Reset Movement Speed To Default
+        ai.Movement.MoveSpeed.Equals(default);
+
     }
 }
